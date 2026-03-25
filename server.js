@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 
 // Rutas
 app.use("/api/contact", require("./routes/contactRoutes"));
+app.use("/api", require("./routes/authRoutes"));
 
 // Puerto dinámico (Render usa esto)
 const PORT = process.env.PORT || 5000;
